@@ -1,0 +1,991 @@
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-saira: "Saira Condensed", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-source: "Source Sans 3", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.bold-light {
+  font-weight: 650;
+}
+
+.bold-very-light {
+  font-weight: 550;
+}
+
+.block {
+  display: block;
+}
+
+.smaller {
+  font-size: 49px;
+}
+
+#home {
+  background-color: #f4f6f7;
+}
+
+#home #phone-nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white; 
+  z-index: 1000; 
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+#home #phone-nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #F4F6F7;
+  z-index: 10;
+  text-align: center;
+}
+
+#home #phone-nav-bar ul li {
+  font-family: var(--font-lato);
+  font-size: 17px;
+  font-weight: bold;
+  display: inline;
+  padding: 15px;
+  height: auto;
+  border-top: 1px solid black;
+}
+
+#home #phone-nav-bar ul li:last-child{
+  border-bottom: 1px solid black;
+}
+
+#home #phone-nav-bar ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background: none;
+  width: 100%;
+  padding: 10px 0;
+  transition: color 0.7s ease, font-weight 0.7s ease;
+  transition: color 0.4s ease-out, font-weight 0.4s ease-out;
+}
+
+#home #phone-nav-bar ul li a:hover {
+  color: #224984;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-underline-offset: 3px;
+}
+
+#home #phone-nav-bar #icon-hamburger{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  padding: 20px 20px 5px 20px;
+}
+
+#home #phone-nav-bar #icon-hamburger #hamburger-toggle #hamburger-toggle-picture{
+  height: 50px;
+}
+
+#home #phone-nav-bar #icon-hamburger #purestrength-logo-picture{
+  height: 75px;
+  border-radius: 50px;
+}
+
+#phone-inner-links {
+  display: none;
+}
+
+/* Home Nav Bar */
+#home #nav-bar {
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 3em;
+}
+
+#home #nav-bar ul li {
+  font-family: var(--font-lato);
+  font-size: 17px;
+  font-weight: bold;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+#home #nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 35px 50px;
+  background: none;
+  transition: color 0.7s ease, font-weight 0.7s ease;
+  transition: color 0.4s ease-out, font-weight 0.4s ease-out;
+}
+
+#home #nav-bar ul li a:hover {
+  color: #224984;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-underline-offset: 3px;
+}
+
+#phone-nav-bar{
+  display: none;
+}
+
+/* Home Main Contents */
+#home #contents .pure-strength-text {
+  font-family: var(--font-saira);
+  font-size: 130px;
+  color: black;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+
+.color-blue {
+  color: #224984;
+}
+
+#home #contents #contents-media {
+  font-family: var(--font-lato);
+  display: flex;
+  justify-content: center;
+  margin-top: -2em;
+  position: relative;
+}
+
+#home #contents #contents-media #inner-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  width: 50em;
+  padding: 0 15px 0 15px;
+}
+
+.button-square {
+  background-color: #224984;
+  border: solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  animation: pulse-shadow 2s infinite;
+  transition: all 0.7s ease;
+  transform: all 0.7s ease, border-color 0.7s ease;
+}
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 0 4px rgba(34, 72, 132, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 10px 5px rgba(64, 122, 214, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 4px rgba(94, 144, 225, 0.5);
+  }
+}
+
+/* Main Product Picture and Desc Container */
+#content-header-container {
+  position: relative;
+  background: linear-gradient(to right, #1b3a73, #1d375e 30%, #0c0b20 80%);
+  width: 100%;
+  height: 50em;
+  color: white;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#content-header-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background-color: #f4f6f7;
+  transform: skewY(3deg);
+  transform-origin: bottom left;
+  z-index: 1;
+}
+
+#product-info-container {
+  width: 58.5em;
+  position: absolute;
+  top: 15em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+#product-info-container #product-picture {
+  width: 24em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#shadow-image {
+  opacity: 60%;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-70%);
+  z-index: -1;
+  width: 45%;
+  height: auto;
+}
+
+#product-info-container #product-picture #product-image {
+  height: 32em;
+  z-index: 2;
+}
+
+#product-info-container #product-desc {
+  padding-bottom: 1em;
+  width: 33em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#product-desc #product-name {
+  padding-top: 2em;
+  position: relative;
+  height: 19em;
+  width: auto;
+}
+
+#price-container {
+  font-family: var(--font-lato);
+  color: white;
+  background-color: #ff0000;
+  border-radius: 10px;
+  width: 9em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2px;
+  left: -25px;
+  transform: skewY(-6deg);
+}
+
+#product-desc #product-name #main-text {
+  color: white;
+  font-family: var(--font-montserrat);
+  font-size: 52px;
+  font-weight: bold;
+}
+
+#product-desc #product-benefits {
+  height: 19em;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#product-desc #product-benefits .cards {
+  height: 5.6em;
+  width: auto;
+  background-color: #60ac60;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#product-benefits .cards p {
+  width: 29em;
+  color: white;
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+}
+
+/* Table Container */
+
+#main-table th {
+  background-color: #224984;
+}
+
+#main-table tr:nth-child(even) {
+  background-color: #c0d2ed;
+}
+
+#main-table tr:nth-child(odd) {
+  background-color: #dce7f7;
+}
+
+#main-table-container {
+  padding: 5em 9em 7em 9em;
+  background-color: #f4f6f7;
+  font-family: var(--font-montserrat);
+  display: flex;
+  justify-content: center;
+}
+
+#main-table {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 1200px;
+}
+
+#main-table-container #main-table .tr-hover:hover {
+  background-color: #ffffff;
+}
+
+#main-table-container #main-table th {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+#main-table-container #main-table td {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#main-table th,
+#main-table td {
+  width: 500px;
+  height: 50px;
+  text-align: left;
+  padding: 15px 50px;
+}
+
+#review-container {
+  padding: 4em 10em;
+  background-color: white;
+  color: #224984;
+  font-family: var(--font-montserrat);
+}
+
+#review-container #inner-review {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#review-container #inner-review div {
+  margin: 0 30px;
+}
+
+#review-container #inner-review #lab-personal-rating {
+  text-align: center;
+}
+
+#review-container #inner-review #lab-personal-rating h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+#review-container #inner-review #lab-personal-rating h2 {
+  font-size: 15px;
+  background-color: #224984;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+#review-container #inner-review #product-ingredients {
+  font-size: 12px;
+  width: 25em;
+  color: black;
+}
+
+#review-container #inner-review #product-ingredients .def {
+  color: #224984;
+  font-weight: 750;
+  margin-bottom: 9px;
+}
+
+#review-container #inner-review #product-ingredients h1 {
+  font-weight: 450;
+}
+
+#review-container #inner-review #ingredients .inner-ingredients {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 11em;
+}
+
+#review-container #inner-review #ingredients .inner-ingredients .def {
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+  width: 5em;
+  color: white;
+  background-color: #224984;
+}
+
+#review-container #inner-review #ingredients .inner-ingredients .value {
+  text-align: center;
+  width: 70px;
+}
+
+#review-container #inner-review #ingredients .inner-ingredients .protein {
+  background-color: #7e57c2;
+}
+
+#review-container #inner-review #ingredients .inner-ingredients .carbs {
+  background-color: #daa520;
+}
+
+#review-container #inner-review #ingredients .inner-ingredients .fats {
+  background-color: #ff6347;
+}
+
+#review-container #inner-review #ingredients .inner-ingredients .value {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+#review-container #inner-review #allergens,
+#digestive {
+  font-size: 12px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#review-container #inner-review #allergens h1,
+#digestive h1 {
+  font-weight: 450;
+}
+
+#review-container #inner-review #allergens .def,
+#digestive .def {
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #224984;
+}
+
+#review-container #inner-review #digestive,
+#allergens {
+  width: 25em;
+}
+
+/* Reviews Container */
+#main-reviews-container {
+  padding: 5em 0;
+  width: 100%;
+  background: linear-gradient(to right, #1b3a73, #1d375e 30%, #0c0b20 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 5em;
+}
+
+#main-reviews-container #inner-reviews-video {
+  margin-bottom: 7rem;
+  text-align: center;
+}
+
+#main-reviews-container #inner-reviews-video #review-video {
+  border: 3px solid white;
+}
+
+#main-reviews-container #inner-reviews-video h1 {
+  color: white;
+  font-size: 60px;
+  font-family: var(--font-montserrat);
+  margin-bottom: 25px;
+}
+
+#main-reviews-container #shops {
+  display: flex;
+  width: 35em;
+}
+
+#main-reviews-container #shops #first-shops {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#main-reviews-container #shops #second-shops {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#shops #inner-text {
+  color: white;
+  font-family: var(--font-montserrat);
+  font-size: 35px;
+  border-right: solid white 5px;
+  padding-right: 23px;
+  margin-right: 1em;
+}
+
+#shops #inner-text #firstH {
+  margin-bottom: 1rem;
+  opacity: 85%;
+}
+
+#shops #inner-text #firstp {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.shop-logo {
+  height: 78px;
+  margin: 1em;
+}
+
+#inner-shop-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Footer */
+#footer {
+  padding: 50px 30px;
+  text-align: center;
+  position: relative;
+  margin-top: auto;
+  color: white;
+  background-color: black;
+}
+
+#footer #purestrength-text-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  margin-bottom: 2.5em;
+}
+
+#footer #purestrength-text-logo #purestrength-logo {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+#footer #purestrength-text-logo #pure-strength-text {
+  background: none;
+  font-family: var(--font-saira);
+  text-align: left;
+  font-size: 40px;
+  line-height: 1;
+  margin-left: 5px;
+}
+
+.line-break-footer {
+  margin-bottom: 2em;
+}
+
+#quick-links h2 {
+  font-family: var(--font-montserrat);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+#quick-links #nav-quick-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+#quick-links #nav-quick-links li {
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  list-style: none;
+  margin: 0 8px 0 8px;
+}
+
+#quick-links #nav-quick-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+}
+
+#quick-links #nav-quick-links li a:hover {
+  color: #224984;
+  text-decoration: underline;
+}
+
+#copyright-text {
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+}
+
+.text-created {
+  font-family: var(--font-montserrat);
+  margin-top: 1em;
+}
+
+.text-created a {
+  color: #224984;
+}
+
+/* Port Resets */
+
+#phone-product-benefits{
+  display: None;
+  height: 19em;
+  width: auto;
+}
+#phone-product-benefits .cards {
+  height: 5.6em;
+  width: auto;
+  background-color: #60ac60;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#phone-product-benefits .cards p {
+  width: 29em;
+  color: white;
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+}
+
+/* Media Queries*/
+
+/* IPAD VIEW PORT */
+/* Ipad Pro, Ipad Air, Ipad Mini */
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+  #home #nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #home #nav-bar ul li a {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  #home #contents {
+    margin-top: 8em;
+  }
+  #review-container #inner-review #product-ingredients,
+  #allergens,
+  #review-container #inner-review #digestive {
+    width: 100%;
+  }
+  #product-info-container {
+    width: auto;
+  }
+  #review-container #inner-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #review-container #inner-review #lab-personal-rating h2 {
+    font-size: 25px;
+  }
+  #review-container #inner-review p,
+  #review-container #inner-review h1 {
+    font-size: 25px;
+  }
+  #review-container #inner-review div {
+    margin-bottom: 2.5em;
+  }
+  #review-container #inner-review #ingredients .inner-ingredients {
+    width: 13em;
+  }
+  #product-desc #product-name {
+    height: auto;
+  }
+  #product-desc #product-benefits {
+    width: auto;
+  }
+  #product-desc #product-name #main-text {
+    padding: 0 10px 10px 15px;
+  }
+}
+
+/* Ipad Pro */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  #content-header-container {
+    height: 55em;
+  }
+}
+
+/* Ipad Air */
+@media only screen and (min-width: 820px) and (max-width: 1023px) {
+  #product-desc #product-name #main-text {
+    height: auto;
+    font-size: 5.5vw;
+    padding: 0 10px 10px 10px;
+  }
+  #product-info-container #product-picture {
+    width: 20em;
+  }
+  #product-info-container #product-picture #product-image {
+    height: 50vw;
+  }
+  #product-info-container #product-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+  }
+  #product-desc #product-benefits .cards {
+    width: 29em;
+    padding: 10px 18px;
+  }
+  #product-benefits .cards p {
+    font-size: 14px;
+  }
+  #product-desc {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  #product-info-container #product-desc,
+  #product-info-container #product-picture {
+    width: auto;
+  }
+}
+
+/* Ipad Mini */
+@media only screen and (min-width: 768px) and (max-width: 819px) {
+  #content-header-container {
+    height: 52em;
+  }
+  #product-desc {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  #product-info-container #product-desc,
+  #product-info-container #product-picture {
+    width: auto;
+  }
+  #product-info-container #product-picture {
+    width: auto;
+  }
+  #product-desc #product-name,
+  #product-desc #product-benefits {
+    width: 50vw;
+    max-width: 100%;
+  }
+  #product-benefits .cards p {
+    font-size: 12px;
+  }
+  #product-desc #product-name #main-text {
+    font-size: 5.5vw;
+    padding-left: 0;
+  }
+  #product-info-container #product-picture #product-image {
+    height: 27em;
+    z-index: 2;
+  }
+}
+
+/* PHONE VIEW PORT */
+@media only screen and (max-width: 762px){
+  #product-info-container {
+    width: auto;
+  }
+  #review-container #inner-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #review-container #inner-review #lab-personal-rating h2 {
+    font-size: 25px;
+  }
+  #review-container #inner-review p,
+  #review-container #inner-review h1 {
+    font-size: 25px;
+  }
+  #review-container #inner-review div {
+    margin-bottom: 2.5em;
+  }
+  #review-container #inner-review #ingredients .inner-ingredients {
+    width: 13em;
+  }
+  #main-table-container #main-table td{
+    font-size: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #main-table-container #main-table th{
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #main-reviews-container{
+    padding-bottom: 0;
+  }
+  #main-reviews-container #inner-reviews-video #review-video {
+    height: 20em;
+    width: auto;
+  }
+  #main-reviews-container #shops{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  #shops #inner-text {
+    text-align: center;
+    border-right: none;
+    border-bottom: solid white 5px;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  #shops #inner-text #firstp{
+    margin-bottom: 15px;
+  }
+  #inner-shop-container{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #shops #inner-shop-container #first-shops{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+  }
+  #shops #inner-shop-container #second-shops{
+    display: flex;
+    flex-direction: row;
+  }
+  #quick-links{
+    display: none;
+  }
+  #content-header-container{
+    height: 23em;
+  }
+  #product-info-container{
+    height: 16em;
+    padding: 0 20px;
+  }
+  #product-info-container #product-desc{
+    width: auto;
+  }
+  #product-desc #product-name #main-text{
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #product-info-container #product-picture{
+    width: auto;
+  }
+  #product-info-container #product-picture #product-image{
+    height: 16em;
+  }
+  #content-header-container::after,
+  #shadow-image,
+  #product-desc #product-benefits{
+    display: none;
+  }
+  #phone-product-benefits{
+    height: 15em;
+    background: linear-gradient(to right, #1b3a73, #1d375e 30%, #0c0b20 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em 3em 4em;
+  }
+  #phone-product-benefits .cards{
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 20em;
+    height: 3.5em;
+  }
+  #phone-product-benefits .cards p{
+    font-size: 9px;
+    width: auto;
+  }
+  #price-container {
+    font-size: 12px;
+    z-index: 3;
+  }
+
+  /*  */
+  #home #nav-bar{
+    background: linear-gradient(to right, #1b3a73, #1d375e 30%, #0c0b20 80%);
+  }
+  #home #nav-bar ul li{
+    opacity: 0;
+  }
+  .line-break{
+    display: none;
+  }
+  #phone-nav-bar{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  #content-header-container {
+    height: 57em;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  #content-header-container {
+    height: 57em;
+  }
+}
+
+@media print{
+  #home #nav-bar,
+  #main-reviews-container,
+  #shadow-image,
+  #footer{
+    display: none;
+  }
+  #content-header-container{
+    height: 45em;
+  }
+  #product-info-container{
+    top: 5em;
+  }
+  #product-info-container #product-picture #product-image{
+    height: 25em;
+  }
+  #price,
+  #product-desc #product-name #main-text,
+  #product-benefits .cards p{
+    color: black;
+  }
+}

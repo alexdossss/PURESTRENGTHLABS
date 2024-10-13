@@ -1,0 +1,1138 @@
+:root {
+  --font-lato: "Lato", sans-serif;
+  --font-saira: "Saira Condensed", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-source: "Source Sans 3", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bold {
+  font-weight: 900;
+}
+.bold-light {
+  font-weight: 650;
+}
+.bold-very-light {
+  font-weight: 550;
+}
+.bigger {
+  font-size: 45px;
+}
+.block {
+  display: block;
+}
+#home {
+  background-color: #f4f6f7;
+}
+/* Ports */
+#register-ipad-port {
+  display: none;
+  font-family: var(--font-lato);
+  line-height: 2.6;
+  margin-bottom: 2em;
+  p {
+    margin-top: 1em;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 12px;
+  }
+}
+#register-phone-port {
+  display: none;
+  font-family: var(--font-lato);
+  line-height: 2.6;
+  margin: 1em 0.4em 1em 0.4em;
+  p {
+    margin-top: 1em;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 10px;
+  }
+  .button-square {
+    font-size: 12px;
+  }
+}
+#home #phone-nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+#home #phone-nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #f4f6f7;
+  z-index: 10;
+  text-align: center;
+}
+#home #phone-nav-bar ul li {
+  font-family: var(--font-lato);
+  font-size: 17px;
+  font-weight: bold;
+  display: inline;
+  padding: 15px;
+  height: auto;
+  border-top: 1px solid black;
+}
+#home #phone-nav-bar ul li:last-child {
+  border-bottom: 1px solid black;
+}
+#home #phone-nav-bar ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background: none;
+  width: 100%;
+  padding: 10px 0;
+  transition: color 0.7s ease, font-weight 0.7s ease;
+  transition: color 0.4s ease-out, font-weight 0.4s ease-out;
+}
+#home #phone-nav-bar ul li a:hover {
+  color: #224984;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-underline-offset: 3px;
+}
+#home #phone-nav-bar #icon-hamburger {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  padding: 20px 20px 5px 20px;
+}
+#home
+  #phone-nav-bar
+  #icon-hamburger
+  #hamburger-toggle
+  #hamburger-toggle-picture {
+  height: 50px;
+}
+#home #phone-nav-bar #icon-hamburger #purestrength-logo-picture {
+  height: 75px;
+  border-radius: 50px;
+}
+#phone-inner-links {
+  display: none;
+}
+/* Home Nav Bar */
+#home #nav-bar {
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 3em;
+}
+#home #nav-bar ul li {
+  font-family: var(--font-lato);
+  font-size: 17px;
+  font-weight: bold;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+#home #nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 35px 50px;
+  background: none;
+  transition: color 0.7s ease, font-weight 0.7s ease;
+  transition: color 0.4s ease-out, font-weight 0.4s ease-out;
+}
+#home #nav-bar ul li a:hover {
+  color: #224984;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-underline-offset: 3px;
+}
+#phone-nav-bar {
+  display: none;
+}
+/* Home Main Contents */
+#home #contents .pure-strength-text {
+  font-family: var(--font-saira);
+  font-size: 130px;
+  color: black;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+.color-blue {
+  color: #224984;
+}
+#home #contents #contents-media {
+  font-family: var(--font-lato);
+  display: flex;
+  justify-content: center;
+  margin-top: -2em;
+  position: relative;
+}
+#home #contents #contents-media #inner-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  width: 50em;
+  padding: 0 15px 0 15px;
+}
+.button-square {
+  background-color: #224984;
+  border: solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  animation: pulse-shadow 2s infinite;
+  transition: all 0.7s ease;
+  transform: all 0.7s ease, border-color 0.7s ease;
+}
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 0 4px rgba(34, 72, 132, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 10px 5px rgba(64, 122, 214, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 4px rgba(94, 144, 225, 0.5);
+  }
+}
+.button-square:hover {
+  cursor: pointer;
+  border: solid #224984;
+  animation: pulse 10s ease-in-out forwards;
+  box-shadow: 0 0.5em 0.5em -0.4em #05214f;
+  transform: translateY(-0.1rem);
+}
+#hero-image {
+  display: flex;
+  justify-content: center;
+}
+#background-dots {
+  position: absolute;
+  background: none;
+  height: 727px;
+}
+#hero-man {
+  position: relative;
+  height: 650px;
+  z-index: 2;
+  background: none;
+  max-height: 100%;
+}
+/* About Us */
+#about-us {
+  position: relative;
+  background: linear-gradient(to right, #1b3a73, #1d375e 30%, #0c0b20 80%);
+  width: 100%;
+  height: 50em;
+  padding: 70px 170px;
+  color: white;
+  overflow: hidden;
+}
+#about-us-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 40%;
+}
+#about-us h1,
+#purestrength-text-logo-about-us {
+  position: relative;
+  z-index: 1;
+}
+#about-us::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  background-color: #f4f6f7;
+  transform: skewY(1.5deg);
+  transform-origin: bottom left;
+  z-index: 1;
+}
+#about-us h1 {
+  text-align: center;
+  font-family: var(--font-saira);
+  font-size: 50px;
+  margin-top: 1em;
+}
+#about-us #purestrength-text-logo-about-us {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+#about-us #purestrength-text-logo-about-us #purestrength-logo {
+  height: 15em;
+  border-radius: 50%;
+  margin-right: 4em;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+}
+#about-us #purestrength-text-logo-about-us #inner-text {
+  width: 40em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  margin-left: 25px;
+}
+#about-us #purestrength-text-logo-about-us #inner-text p {
+  font-family: var(--font-montserrat);
+  font-size: 30px;
+  padding-bottom: 1em;
+}
+/* Top Picks */
+#top-picks {
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 3em;
+  color: black;
+  background-color: #f4f6f7;
+}
+#top-picks #inner-text {
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 8em;
+}
+#top-picks #inner-text h1 {
+  font-family: var(--font-saira);
+  font-size: 65px;
+}
+#top-picks #inner-text h3 {
+  font-family: var(--font-lato);
+  font-size: 34px;
+  color: #224984;
+}
+#protein-powder-tp #card-protein-powder-tp #inner-protein-card-tp,
+#creatine-supplement-tp #card-creatine-supplement-tp #inner-creatine-card-tp {
+  position: relative;
+}
+.ranking {
+  position: absolute;
+  width: 100px;
+  top: -10px;
+  left: -20px;
+  z-index: 10;
+}
+#top-picks #protein-powder-tp,
+#top-picks #creatine-supplement-tp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#top-picks #protein-powder-tp .title,
+#top-picks #creatine-supplement-tp .title {
+  font-family: var(--font-lato);
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+#protein-powder-tp #card-protein-powder-tp,
+#creatine-supplement-tp #card-creatine-supplement-tp {
+  width: 55em;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  margin-bottom: 9em;
+  font-family: var(--font-lato);
+}
+#protein-powder-tp #card-protein-powder-tp #inner-protein-card-tp {
+  width: 350px;
+  text-align: center;
+  background: linear-gradient(to bottom, #7e57c2 0%, #d9d9d9 44%);
+  padding-top: 10px;
+}
+#protein-powder-tp #card-protein-powder-tp #inner-protein-card-tp .img-protein {
+  height: 400px;
+  width: auto;
+  padding: 20px 30px;
+}
+#inner-protein-card-tp {
+  text-decoration: none;
+  transition: all 0.7s ease;
+}
+#inner-protein-card-tp:hover {
+  box-shadow: 0 4px 10px rgba(48, 48, 48, 1);
+  transform: translateY(-0.4rem);
+}
+#inner-protein-card-tp #protein-description-tp p {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: black;
+}
+#inner-protein-card-tp #price-container {
+  background-color: #224984;
+  padding: 15px;
+}
+#inner-protein-card-tp #price-container .price {
+  color: white;
+  font-size: 30px;
+}
+#creatine-supplement-tp #card-creatine-supplement-tp #inner-creatine-card-tp {
+  width: 350px;
+  text-align: center;
+  background: linear-gradient(to bottom, #32cd32 0%, #d9d9d9 44%);
+  padding-top: 10px;
+}
+#creatine-supplement-tp
+  #card-creatine-supplement-tp
+  #inner-creatine-card-tp
+  .img-creatine {
+  height: 400px;
+  width: auto;
+  padding: 20px 30px;
+}
+#inner-creatine-card-tp {
+  text-decoration: none;
+  transition: all 0.7s ease;
+}
+#inner-creatine-card-tp:hover {
+  box-shadow: 0 4px 15px rgba(48, 48, 48, 1);
+  transform: translateY(-0.4rem);
+}
+#inner-creatine-card-tp #creatine-description-tp p {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: black;
+}
+#inner-creatine-card-tp #price-container {
+  background-color: #224984;
+  padding: 15px;
+}
+#inner-creatine-card-tp #price-container .price {
+  color: white;
+  font-size: 30px;
+}
+/* All Products */
+#all-products {
+  background: linear-gradient(to right, #1b3a73, #1d375e 30%, #0c0b20 80%);
+  padding: 7em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#all-products #inner-text {
+  color: white;
+  text-align: center;
+  width: 38em;
+  margin-bottom: 3em;
+}
+#all-products #inner-text h1 {
+  font-family: var(--font-lato);
+  font-size: 45px;
+  margin-bottom: 0.5em;
+}
+#all-products #inner-text p {
+  font-family: var(--font-montserrat);
+  font-size: 25px;
+  line-height: 1.5;
+}
+#all-products-protein-creatine {
+  display: flex;
+  justify-content: space-between;
+  width: 55em;
+  text-align: center;
+}
+#all-products-protein-creatine .title-text {
+  color: rgb(255, 255, 255, 50%);
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 45px;
+  margin-bottom: 2em;
+}
+.desc-creatine,
+.desc-protein {
+  padding: 20px 30px 20px 30px;
+  color: black;
+  font-size: 23px;
+  font-family: var(--font-source);
+  font-weight: 600;
+}
+/* All Products Protein */
+#ap-protein {
+  width: 22em;
+  display: flex;
+  flex-direction: column;
+}
+#ap-protein .inner-product {
+  text-decoration: none;
+  margin-bottom: 4em;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+#ap-protein .inner-product:hover {
+  box-shadow: 0 4px 25px #7e57c2;
+  transform: translateY(-0.4rem);
+}
+#ap-protein .inner-product .img-protein {
+  height: 24em;
+  background-color: white;
+  padding-top: 55px;
+  text-align: center;
+}
+#ap-protein .inner-product .img-protein .main-img-ap {
+  height: 330px;
+}
+#ap-protein .inner-product .desc-protein {
+  width: auto;
+  height: 6em;
+  background-color: white;
+}
+#ap-protein .inner-product .price-container {
+  font-family: var(--font-lato);
+  background-color: #224984;
+  padding: 15px;
+}
+#ap-protein .inner-product .price-container .price {
+  color: white;
+  font-size: 30px;
+}
+/* All Products Creatine */
+#ap-creatine {
+  width: 22em;
+  display: flex;
+  flex-direction: column;
+}
+#ap-creatine .inner-product {
+  text-decoration: none;
+  margin-bottom: 4em;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+#ap-creatine .inner-product:hover {
+  box-shadow: 0 4px 25px #32cd32;
+  transform: translateY(-0.4rem);
+}
+#ap-creatine .inner-product .img-creatine {
+  height: 24em;
+  background-color: white;
+  padding-top: 55px;
+  text-align: center;
+}
+#ap-creatine .inner-product .img-creatine .main-img-ap {
+  height: 330px;
+}
+#ap-creatine .inner-product .desc-creatine {
+  width: auto;
+  height: 6em;
+  background-color: white;
+}
+#ap-creatine .inner-product .price-container {
+  font-family: var(--font-lato);
+  background-color: #224984;
+  padding: 15px;
+}
+#ap-creatine .inner-product .price-container .price {
+  color: white;
+  font-size: 30px;
+}
+/* Contact Us */
+#contact-us {
+  padding: 60px 90px;
+}
+#contact-us #inner-text {
+  font-family: var(--font-saira);
+  line-height: 1;
+  margin-bottom: 6em;
+}
+#contact-us #inner-text h1 {
+  color: #224984;
+  font-size: 80px;
+}
+#contact-us #inner-text p {
+  font-size: 40px;
+  margin-bottom: 4px;
+}
+#contact-us #inner-text #description {
+  font-size: 20px;
+}
+#contact-us #contact-us-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+}
+#contact-us #contact-us-form #name-email-section {
+  display: flex;
+  color: #224984;
+  font-size: 20px;
+  font-family: var(--font-lato);
+  font-weight: bold;
+}
+#name-email-section #name-section,
+#name-email-section #email-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 35px 30px;
+}
+#contact-us #contact-us-form #name-email-section label {
+  text-align: center;
+  padding-right: 7px;
+}
+#contact-us #contact-us-form #name-email-section input {
+  padding: 7px;
+  width: 18em;
+}
+#contact-us-form #name,
+#contact-us-form #email {
+  background-color: #d9d9d9;
+  border: none;
+}
+#contact-us #contact-us-form #text-area {
+  margin-bottom: 9px;
+}
+#contact-us-form #text-area #message {
+  font-family: var(--font-lato);
+  width: 50em;
+  height: 15em;
+  border: none;
+  background-color: #d9d9d9;
+  padding: 14px;
+  margin-bottom: 1em;
+}
+#contact-us #contact-us-form #text-area label {
+  font-family: var(--font-lato);
+  color: #224984;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-left: 4px;
+}
+#submit-container {
+  display: flex;
+  justify-content: space-between;
+}
+#empty-div {
+  width: 125px;
+}
+#submit-button {
+  background-color: #0c0b20;
+  padding: 10px 50px;
+  border-radius: 25px;
+  color: white;
+  border: 1px solid #0c0b20;
+  transition: all 0.4s ease;
+}
+#submit-button:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0 1em 0.5em rgba(34, 73, 132, 0.5);
+  cursor: pointer;
+}
+#contact-us #icon-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+#contact-us #icon-logo .icon-socmed {
+  height: 50px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+/* Footer */
+#footer {
+  padding: 50px 30px;
+  text-align: center;
+  position: relative;
+  margin-top: auto;
+  color: white;
+  background-color: black;
+}
+#footer #purestrength-text-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  margin-bottom: 2.5em;
+}
+#footer #purestrength-text-logo #purestrength-logo {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#footer #purestrength-text-logo #pure-strength-text {
+  background: none;
+  font-family: var(--font-saira);
+  text-align: left;
+  font-size: 40px;
+  line-height: 1;
+  margin-left: 5px;
+}
+.line-break-footer {
+  margin-bottom: 2em;
+}
+#quick-links h2 {
+  font-family: var(--font-montserrat);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+#quick-links #nav-quick-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+#quick-links #nav-quick-links li {
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+  list-style: none;
+  margin: 0 8px 0 8px;
+}
+#quick-links #nav-quick-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+}
+#quick-links #nav-quick-links li a:hover {
+  color: #224984;
+  text-decoration: underline;
+}
+#copyright-text {
+  font-family: var(--font-montserrat);
+  font-size: 18px;
+}
+.text-created {
+  font-family: var(--font-montserrat);
+  margin-top: 1em;
+}
+.text-created a {
+  color: #224984;
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD VIEW PORT */
+/* (min-width: 1024px) and (max-width: 1366px) */
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+  #home #nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #home #nav-bar ul li a {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  #home #contents {
+    margin-top: 8em;
+  }
+  #home #contents .pure-strength-text {
+    padding: 0 45px;
+    text-align: left;
+    line-height: 1.1;
+    font-size: 7.5rem;
+  }
+  #home #contents #contents-media #inner-content .button-square {
+    display: none;
+  }
+  #home #contents #contents-media #inner-content {
+    padding: 2.3em 0 0 45px;
+    font-size: 2rem;
+  }
+  #hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  #hero-image #hero-man {
+    height: 50em;
+  }
+  #hero-image #background-dots {
+    height: 42em;
+    position: absolute;
+    background: none;
+  }
+  #register-ipad-port {
+    display: block;
+    padding-left: 45px;
+  }
+  #ipad-port {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #purestrength-text-logo-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #about-us {
+    height: 55em;
+  }
+  #about-us::after {
+    display: none;
+    transform: none;
+  }
+  #about-us #purestrength-text-logo-about-us #purestrength-logo {
+    margin: 0 0 30px;
+  }
+  #about-us #purestrength-text-logo-about-us #inner-text {
+    text-align: center;
+    margin-left: 0;
+  }
+  #top-picks {
+    padding-top: 8em;
+  }
+  #protein-powder-tp #card-protein-powder-tp,
+  #creatine-supplement-tp #card-creatine-supplement-tp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+  #inner-protein-card-tp,
+  #inner-creatine-card-tp {
+    margin-bottom: 7em;
+  }
+  #all-products #inner-text h1 {
+    font-size: 5em;
+  }
+  #all-products #inner-text p {
+    display: none;
+  }
+  #all-products-protein-creatine,
+  #all-products-protein,
+  #all-products-creatine {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  #all-products-protein-creatine .title-text {
+    font-size: 4em;
+    margin-bottom: 1em;
+  }
+  #all-products-protein #ap-protein,
+  #all-products-creatine #ap-creatine {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 5em;
+  }
+  #contact-us #contact-us-form label,
+  #contact-us #contact-us-form #text-area label {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  #contact-us #description {
+    display: none;
+  }
+  #contact-us #contact-us-form #inner-text {
+    text-align: left;
+    width: 100%;
+  }
+  #contact-us #contact-us-form #name-email-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 33em;
+  }
+  #contact-us #contact-us-form #name-email-section input {
+    height: 5em;
+    width: 30em;
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+  #contact-us #contact-us-form #name-email-section #name-section,
+  #name-email-section #email-section {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #contact-us #contact-us-form #text-area {
+    width: 35em;
+  }
+  #contact-us #contact-us-form #text-area #message {
+    width: 100%;
+    font-size: 16px;
+    max-width: 35em;
+    min-width: 35em;
+    min-height: 20em;
+  }
+}
+
+/* PHONE VIEW PORT */
+@media only screen and (max-width: 767px) {
+  #contents {
+    padding-top: 8em;
+  }
+  #home #contents .pure-strength-text {
+    font-size: 3.5em;
+    margin: 1.5em 0 0.5em;
+    padding: 0 20px;
+  }
+  #home #contents #contents-media #inner-content,
+  #about-us-video,
+  #contact-us #description,
+  #quick-links,
+  #about-us::after,
+  #home #nav-bar,
+  .line-break {
+    display: none;
+  }
+  #background-dots {
+    height: 460px;
+  }
+  #hero-man {
+    height: 550px;
+  }
+  #register-phone-port {
+    display: block;
+    padding: 0 10px;
+    padding-left: 45px;
+    width: 100%;
+  }
+  #phone-port {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: auto;
+  }
+  #purestrength-text-logo-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #about-us {
+    height: 45em;
+    padding: 70px 90px;
+  }
+  #about-us h1 {
+    margin-top: 0;
+  }
+  #about-us #purestrength-text-logo-about-us #purestrength-logo {
+    margin: 0 0 2.5em;
+    height: 12em;
+  }
+  #about-us #purestrength-text-logo-about-us #inner-text {
+    width: 20em;
+    margin-left: 0;
+    text-align: center;
+  }
+  #about-us #purestrength-text-logo-about-us #inner-text p {
+    font-size: 1.2em;
+  }
+  #top-picks {
+    padding-top: 10em;
+  }
+  #top-picks #protein-powder-tp .title,
+  #top-picks #creatine-supplement-tp .title {
+    font-size: 2em;
+    width: 7em;
+  }
+  #protein-powder-tp #card-protein-powder-tp,
+  #creatine-supplement-tp #card-creatine-supplement-tp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    width: auto;
+  }
+  #inner-protein-card-tp,
+  #inner-creatine-card-tp {
+    margin-bottom: 2em;
+  }
+  #creatine-supplement-tp #card-creatine-supplement-tp #inner-creatine-card-tp,
+  #protein-powder-tp #card-protein-powder-tp #inner-protein-card-tp {
+    width: 290px;
+  }
+  .ranking {
+    width: 85px;
+  }
+  #inner-creatine-card-tp #creatine-description-tp p,
+  #inner-protein-card-tp #protein-description-tp p {
+    font-size: 1em;
+  }
+  #all-products {
+    padding-bottom: 1em;
+  }
+  #all-products #inner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #all-products #inner-text p {
+    font-size: 0.9em;
+    width: 20em;
+  }
+  #all-products-protein-creatine {
+    display: flex;
+    flex-direction: column;
+  }
+  #all-products-protein-creatine .title-text {
+    margin-bottom: 1em;
+  }
+  #all-products-protein,
+  #all-products-creatine {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  #all-products-protein #ap-protein,
+  #all-products-creatine #ap-creatine {
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #ap-protein .inner-product,
+  #ap-creatine .inner-product {
+    margin-bottom: 3em;
+    width: 290px;
+  }
+  .desc-protein,
+  .desc-creatine {
+    font-size: 1em;
+  }
+  #contact-us {
+    padding: 60px 45px;
+  }
+  #contact-us #inner-text h1 {
+    font-size: 65px;
+    text-align: center;
+  }
+  #contact-us #inner-text p {
+    text-align: center;
+  }
+  #contact-us #contact-us-form #inner-text {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  #contact-us #contact-us-form #name-email-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #contact-us #contact-us-form #name-email-section input {
+    height: 3em;
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  #contact-us #contact-us-form #name-email-section #name-section,
+  #name-email-section #email-section {
+    margin: 0 0 25px 0;
+    display: block;
+    justify-content: space-between;
+  }
+  #contact-us #contact-us-form #text-area {
+    width: 100%;
+  }
+  #contact-us #contact-us-form #text-area #message {
+    height: 10em;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    resize: none;
+  }
+  #home #nav-bar,
+  .line-break {
+    display: none;
+  }
+  #phone-nav-bar {
+    display: block;
+  }
+}
+
+@media print {
+  #home #nav-bar,
+  .button-square,
+  #hero-man,
+  #background-dots,
+  #about-us-video,
+  #contact-us,
+  #footer {
+    display: none;
+  }
+  #all-products-protein-creatine,
+  #protein-powder-tp #card-protein-powder-tp,
+  #creatine-supplement-tp #card-creatine-supplement-tp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+  }
+  #top-picks {
+    padding-bottom: 8em !important;
+  }
+  #inner-text,
+  #about-us,
+  #all-products-protein-creatine .title-text,
+  #all-products-creatine #all-products-creatine #ap-creatine .inner-product,
+  #all-products-creatine #all-products-protein #ap-protein .inner-product,
+  #ap-creatine .inner-product .price-container,
+  #ap-protein .inner-product .price-container {
+    margin-bottom: 0 !important;
+    padding: 0;
+  }
+  #ap-protein .inner-product .img-protein .main-img-ap,
+  #ap-creatine .inner-product .img-creatine .main-img-ap {
+    height: 250px;
+  }
+  #ap-creatine .inner-product .img-creatine,
+  #ap-protein .inner-product .img-protein {
+    height: 300px;
+  }
+  #ap-creatine .inner-product .price-container .price,
+  #ap-protein .inner-product .price-container .price,
+  #about-us #purestrength-text-logo-about-us #inner-text p,
+  #all-products #inner-text p,
+  #inner-protein-card-tp #price-container .price,
+  #inner-creatine-card-tp #price-container .price,
+  #all-products #inner-text h1,
+  #about-us h1 {
+    color: black !important;
+  }
+  #all-products-protein-creatine .title-text {
+    margin-top: 80px !important;
+  }
+}

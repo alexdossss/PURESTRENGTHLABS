@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./media/purestrengthlogo.png"
+      sizes="16x16"
+    />
+
+    <!-- Fonts -->
+    <!-- Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Saira Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/registerpagecss.css" />
+
+    <title>PURESTRENGTH LABS Register Page</title>
+  </head>
+  <body>
+    <div id="main-register-header">
+      <video id="video" autoplay muted loop>
+        <source src="./media/video/background-vid-4.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div id="inner-contents-header">
+        <section id="inner-text-container">
+          <h1 id="header-text">REGISTER NOW</h1>
+          <section id="header-desc-text">
+            <h2 class="italic">STAY AHEAD IN WORKOUT SUPPLEMENTS!</h2>
+            <p>
+              Don’t miss out on the latest trends and updates in workout
+              supplements! <br>
+              <span class="bold-light">-PURESTRENGTH LABS</span>
+            </p>
+            <p>
+              Sign up now for FREE exclusive notifications that keep you
+              informed about:
+            </p>
+          </section>
+        </section>
+
+        <section id="what-we-offer-container">
+          <h1 id="inner-what-we-offer">What We Offer</h1>
+          <div id="offer-container">
+            <div class="first-offer of">
+              <h1 class="inner-offer">
+                The Hottest Trends in Workout Supplements
+              </h1>
+            </div>
+            <div class="second-offer of">
+              <h1 class="inner-offer">Special Announcements and Events</h1>
+            </div>
+            <div class="third-offer of">
+              <h1 class="inner-offer">Expert Insights and Reviews</h1>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="empty-div"></div>
+    <div id="registration-form-container">
+      <form id="main-form-registration" action="">
+        <div id="first-last-name-container">
+          <section id="first-name-container">
+            <label class="block bold-light" for="first-name">First Name</label>
+            <input
+              id="first-name"
+              type="text"
+              placeholder="Enter First Name"
+              required
+            />
+          </section>
+          <section id="last-name-container">
+            <label class="block bold-light" for="last-name">Last Name</label>
+            <input
+              id="last-name"
+              type="text"
+              placeholder="Enter Last Name"
+              required
+            />
+          </section>
+        </div>
+
+        <div id="email-container">
+          <label class="block bold-light" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+
+        <div id="phone-country-container">
+          <section id="phone-container">
+            <label class="block bold-light" for="phone-No">Phone</label>
+            <input
+              id="phone-No"
+              type="tel"
+              placeholder="Enter Phone No"
+              required
+            />
+          </section>
+          <section id="country-container">
+            <label class="block bold-light" for="country-selector"
+              >Country</label
+            >
+            <select id="country-selector" name="country-selector" required>
+              <option value="0">Select option</option>
+              <option value="Philippines">Philippines</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="Australia">Australia</option>
+            </select>
+          </section>
+        </div>
+
+        <div class="block" id="reason-container">
+          <section id="reason-for-container">
+            <label class="block bold-light" for="message-container">What Made You Register</label>
+            <textarea id="message-container" type="text" placeholder="Enter Text Here"></textarea>
+          </section>
+          <section id="reset-container">
+            <input type="reset" id="reset-button" />
+          </section>
+        </div>
+
+        <section id="submit-button-container">
+          <input type="submit" id="submit-button"/>
+        </section>
+      </form>
+    </div>
+
+    <footer id="footer">
+      <section id="purestrength-text-logo">
+        <img
+          id="purestrength-logo"
+          src="./media/purestrengthlogo.png"
+          alt="PureStrength Labs Logo"
+        />
+        <h1 id="pure-strength-text">
+          PURESTRENGTH <br />
+          LABS
+        </h1>
+      </section>
+
+      <section id="quick-links">
+        <h2>Quick Links</h2>
+        <ul id="nav-quick-links">
+          <li><a href="index.html" alt="Home Navigation">HOME</a></li>
+            <span class="seperator">|</span>
+          <li>
+            <a href="index.html#top-picks" alt="Top Picks Navigation"
+              >TOP PICKS</a
+            >
+          </li>
+            <span class="seperator">|</span>
+          <li>
+            <a href="index.html#all-products" alt="Products Navigation"
+              >PRODUCTS</a
+            >
+          </li>
+            <span class="seperator">|</span>
+          <li>
+            <a href="index.html#contact-us" alt="Contact Us Navigation"
+              >CONTACT US</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <hr class="line-break-footer" />
+
+      <section id="copyright-text">
+        <p>PureStrength Labs</p>
+        <p>Helping you discover the best in workout supplements.</p>
+        <p>© 2024 PureStrength Labs. All Rights Reserved.</p>
+      </section>
+
+      <p class="text-created">
+        Website Created by:
+        <a
+          href="https://www.linkedin.com/in/alexander-manabat-8206002a7/"
+          target="_blank"
+        >
+          Alexander Manabat</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
