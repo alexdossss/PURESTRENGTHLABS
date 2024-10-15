@@ -93,7 +93,9 @@
 
     <div id="empty-div"></div>
     <div id="registration-form-container">
-      <form id="main-form-registration" action="">
+      <form id="main-form-registration" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="3a2535d3-76de-4b69-8f87-11e26533069a">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <div id="first-last-name-container">
           <section id="first-name-container">
             <label class="block bold-light" for="first-name">First Name</label>
@@ -102,6 +104,7 @@
               type="text"
               placeholder="Enter First Name"
               required
+              name="First Name"
             />
           </section>
           <section id="last-name-container">
@@ -111,6 +114,7 @@
               type="text"
               placeholder="Enter Last Name"
               required
+              name="Last Name"
             />
           </section>
         </div>
@@ -122,6 +126,7 @@
             type="email"
             placeholder="Enter Email"
             required
+            name="Email"
           />
         </div>
 
@@ -133,13 +138,14 @@
               type="tel"
               placeholder="Enter Phone No"
               required
+              name="Phone Number"
             />
           </section>
           <section id="country-container">
             <label class="block bold-light" for="country-selector"
               >Country</label
             >
-            <select id="country-selector" name="country-selector" required>
+            <select id="country-selector" name="Country" required>
               <option value="0">Select option</option>
               <option value="Philippines">Philippines</option>
               <option value="USA">USA</option>
@@ -152,7 +158,7 @@
         <div class="block" id="reason-container">
           <section id="reason-for-container">
             <label class="block bold-light" for="message-container">What Made You Register</label>
-            <textarea id="message-container" type="text" placeholder="Enter Text Here"></textarea>
+            <textarea id="message-container" type="text" placeholder="Enter Text Here" name="What made you register: "></textarea>
           </section>
           <section id="reset-container">
             <input type="reset" id="reset-button" />

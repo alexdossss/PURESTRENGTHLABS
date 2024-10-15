@@ -894,8 +894,12 @@ html {
 
 /* PHONE VIEW PORT */
 @media only screen and (max-width: 767px) {
+  html,
+  body{
+    overflow-x: hidden;
+  }
   #contents {
-    padding-top: 8em;
+    padding-top: 4em;
   }
   #home #contents .pure-strength-text {
     font-size: 3.5em;
@@ -912,10 +916,10 @@ html {
     display: none;
   }
   #background-dots {
-    height: 460px;
+    height: 29em;
   }
   #hero-man {
-    height: 550px;
+    height: 35em;
   }
   #register-phone-port {
     display: block;
@@ -936,7 +940,7 @@ html {
     flex-direction: column;
   }
   #about-us {
-    height: 45em;
+    min-height: 45em;
     padding: 70px 90px;
   }
   #about-us h1 {

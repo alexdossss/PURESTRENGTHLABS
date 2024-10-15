@@ -440,7 +440,9 @@
     </div>
 
     <div id="contact-us">
-      <form id="contact-us-form" action="">
+      <form id="contact-us-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="3a2535d3-76de-4b69-8f87-11e26533069a">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         <section id="inner-text">
           <h1>GET IN TOUCH</h1>
           <p>REACH OUT TO US</p>
@@ -453,12 +455,12 @@
         <div id="name-email-section">
           <section id="name-section">
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Enter Name" required />
+            <input id="name" type="text" placeholder="Enter Name" name="name" required />
           </section>
 
           <section id="email-section">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Enter Email" required />
+            <input id="email" type="email" placeholder="Enter Email" name="email" required />
           </section>
         </div>
 
@@ -467,6 +469,7 @@
           <textarea
             id="message"
             placeholder="Enter message here"
+            name="message"
             required
           ></textarea>
 
