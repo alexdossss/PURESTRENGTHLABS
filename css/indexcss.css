@@ -625,6 +625,10 @@ html {
   background-color: #d9d9d9;
   padding: 14px;
   margin-bottom: 1em;
+  max-width: 50em;
+  min-width: 50em;
+  max-height: 50em;
+  min-height: 25em;
 }
 #contact-us #contact-us-form #text-area label {
   font-family: var(--font-lato);
